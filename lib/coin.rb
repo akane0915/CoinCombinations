@@ -12,7 +12,9 @@ class Fixnum
     nickels = new_cents./(5).floor()
     coin_array.push(nickels)
 
-    coin_array.delete(0)
+    pennies = new_cents.%(5)
+    coin_array.push(pennies)
+
     coin_array
   end
 end
