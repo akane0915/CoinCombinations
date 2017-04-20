@@ -1,5 +1,8 @@
 class Fixnum
   define_method(:coin) do
-    self
+    coin_array =[]
+    quarters = self./(25).floor()
+    coin_array.push(quarters)
+    coin_array
   end
 end
