@@ -13,4 +13,8 @@ describe('Fixnum#coin') do
   it('divides the new_cents by 10 and rounds down to return the number of dimes') do
     expect(35.coin()).to(eq([1,1]))
   end
+
+  it('divides the new_cents by 5 and rounds down to return the number of nickels') do
+    expect(40.coin()).to(eq([1,1,1]))
+  end
 end
