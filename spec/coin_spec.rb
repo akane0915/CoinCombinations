@@ -9,4 +9,8 @@ describe('Fixnum#coin') do
   it('divides the user input by 25 and rounds down to return the number of quarters') do
     expect(25.coin()).to(eq([1]))
   end
+
+  it('divides the new_cents by 10 and rounds down to return the number of dimes') do
+    expect(35.coin()).to(eq([1,1]))
+  end
 end
